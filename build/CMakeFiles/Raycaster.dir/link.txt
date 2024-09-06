@@ -1,0 +1,3 @@
+C:\msys64\mingw64\bin\cmake.exe -E rm -f CMakeFiles\Raycaster.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\Raycaster.dir/objects.a @CMakeFiles\Raycaster.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Raycaster.dir/objects.a -Wl,--no-whole-archive -o Raycaster.exe -Wl,--out-implib,libRaycaster.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Raycaster.dir\linkLibs.rsp
