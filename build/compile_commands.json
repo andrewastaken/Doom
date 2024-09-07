@@ -13,6 +13,12 @@
 },
 {
   "directory": "D:/Projects/Doom/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Raycaster.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\Raycaster.dir\\src\\WADReader.cpp.obj -c D:\\Projects\\Doom\\src\\WADReader.cpp",
+  "file": "D:/Projects/Doom/src/WADReader.cpp",
+  "output": "CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj"
+},
+{
+  "directory": "D:/Projects/Doom/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Raycaster.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\Raycaster.dir\\src\\Window.cpp.obj -c D:\\Projects\\Doom\\src\\Window.cpp",
   "file": "D:/Projects/Doom/src/Window.cpp",
   "output": "CMakeFiles/Raycaster.dir/src/Window.cpp.obj"

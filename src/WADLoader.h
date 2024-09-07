@@ -12,6 +12,8 @@ class WADLoader {
         ~WADLoader();
 
         bool loadWADFile();
+
+        void readDirectories();
     
     private:
         std::string m_WADFilePath;

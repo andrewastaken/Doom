@@ -273,6 +273,30 @@ src/WADLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADLoader.cpp.s
 .PHONY : src/WADLoader.cpp.s
 
+src/WADReader.obj: src/WADReader.cpp.obj
+.PHONY : src/WADReader.obj
+
+# target to build an object file
+src/WADReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj
+.PHONY : src/WADReader.cpp.obj
+
+src/WADReader.i: src/WADReader.cpp.i
+.PHONY : src/WADReader.i
+
+# target to preprocess a source file
+src/WADReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADReader.cpp.i
+.PHONY : src/WADReader.cpp.i
+
+src/WADReader.s: src/WADReader.cpp.s
+.PHONY : src/WADReader.s
+
+# target to generate assembly for a file
+src/WADReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADReader.cpp.s
+.PHONY : src/WADReader.cpp.s
+
 src/Window.obj: src/Window.cpp.obj
 .PHONY : src/Window.obj
 
@@ -368,6 +392,9 @@ help:
 	@echo ... src/WADLoader.obj
 	@echo ... src/WADLoader.i
 	@echo ... src/WADLoader.s
+	@echo ... src/WADReader.obj
+	@echo ... src/WADReader.i
+	@echo ... src/WADReader.s
 	@echo ... src/Window.obj
 	@echo ... src/Window.i
 	@echo ... src/Window.s
