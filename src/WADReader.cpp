@@ -90,9 +90,9 @@ std::vector<T> WADReader::readBytes(size_t initOffset, unsigned int numBytes) {
         throw std::invalid_argument("Size of specified type is not evenly divisible by specified number of bytes.");
     }
 
-    // if(numBytes * sizeof(T) + initOffset > m_WADFileLength) {
-    //     throw std::out_of_range("The specified parameters would result in reading out of bounds.");
-    // }
+    if(numBytes * sizeof(T) + initOffset > m_WADFileLength) {
+        throw std::out_of_range("The specified parameters would result in reading out of bounds.");
+    }
 
     std::vector<T> data;
 
