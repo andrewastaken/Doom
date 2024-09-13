@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/Doom/thirdparty/glad/src/glad.c" "CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj" "gcc" "CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj.d"
   "D:/Projects/Doom/src/Map.cpp" "CMakeFiles/Raycaster.dir/src/Map.cpp.obj" "gcc" "CMakeFiles/Raycaster.dir/src/Map.cpp.obj.d"
-  "D:/Projects/Doom/src/WADLoader.cpp" "CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj" "gcc" "CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj.d"
   "D:/Projects/Doom/src/WADReader.cpp" "CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj" "gcc" "CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj.d"
   "D:/Projects/Doom/src/Window.cpp" "CMakeFiles/Raycaster.dir/src/Window.cpp.obj" "gcc" "CMakeFiles/Raycaster.dir/src/Window.cpp.obj.d"
   "D:/Projects/Doom/src/main.cpp" "CMakeFiles/Raycaster.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Raycaster.dir/src/main.cpp.obj.d"

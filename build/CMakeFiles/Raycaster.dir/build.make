@@ -83,26 +83,11 @@ CMakeFiles/Raycaster.dir/src/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Raycaster.dir/src/Map.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\Doom\src\Map.cpp -o CMakeFiles\Raycaster.dir\src\Map.cpp.s
 
-CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj: CMakeFiles/Raycaster.dir/flags.make
-CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj: CMakeFiles/Raycaster.dir/includes_CXX.rsp
-CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj: D:/Projects/Doom/src/WADLoader.cpp
-CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj -MF CMakeFiles\Raycaster.dir\src\WADLoader.cpp.obj.d -o CMakeFiles\Raycaster.dir\src\WADLoader.cpp.obj -c D:\Projects\Doom\src\WADLoader.cpp
-
-CMakeFiles/Raycaster.dir/src/WADLoader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Raycaster.dir/src/WADLoader.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\Doom\src\WADLoader.cpp > CMakeFiles\Raycaster.dir\src\WADLoader.cpp.i
-
-CMakeFiles/Raycaster.dir/src/WADLoader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Raycaster.dir/src/WADLoader.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\Doom\src\WADLoader.cpp -o CMakeFiles\Raycaster.dir\src\WADLoader.cpp.s
-
 CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj: CMakeFiles/Raycaster.dir/flags.make
 CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj: CMakeFiles/Raycaster.dir/includes_CXX.rsp
 CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj: D:/Projects/Doom/src/WADReader.cpp
 CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj -MF CMakeFiles\Raycaster.dir\src\WADReader.cpp.obj.d -o CMakeFiles\Raycaster.dir\src\WADReader.cpp.obj -c D:\Projects\Doom\src\WADReader.cpp
 
 CMakeFiles/Raycaster.dir/src/WADReader.cpp.i: cmake_force
@@ -117,7 +102,7 @@ CMakeFiles/Raycaster.dir/src/Window.cpp.obj: CMakeFiles/Raycaster.dir/flags.make
 CMakeFiles/Raycaster.dir/src/Window.cpp.obj: CMakeFiles/Raycaster.dir/includes_CXX.rsp
 CMakeFiles/Raycaster.dir/src/Window.cpp.obj: D:/Projects/Doom/src/Window.cpp
 CMakeFiles/Raycaster.dir/src/Window.cpp.obj: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Raycaster.dir/src/Window.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Raycaster.dir/src/Window.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/Window.cpp.obj -MF CMakeFiles\Raycaster.dir\src\Window.cpp.obj.d -o CMakeFiles\Raycaster.dir\src\Window.cpp.obj -c D:\Projects\Doom\src\Window.cpp
 
 CMakeFiles/Raycaster.dir/src/Window.cpp.i: cmake_force
@@ -132,7 +117,7 @@ CMakeFiles/Raycaster.dir/src/main.cpp.obj: CMakeFiles/Raycaster.dir/flags.make
 CMakeFiles/Raycaster.dir/src/main.cpp.obj: CMakeFiles/Raycaster.dir/includes_CXX.rsp
 CMakeFiles/Raycaster.dir/src/main.cpp.obj: D:/Projects/Doom/src/main.cpp
 CMakeFiles/Raycaster.dir/src/main.cpp.obj: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Raycaster.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Raycaster.dir/src/main.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/main.cpp.obj -MF CMakeFiles\Raycaster.dir\src\main.cpp.obj.d -o CMakeFiles\Raycaster.dir\src\main.cpp.obj -c D:\Projects\Doom\src\main.cpp
 
 CMakeFiles/Raycaster.dir/src/main.cpp.i: cmake_force
@@ -147,7 +132,7 @@ CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj: CMakeFiles/Raycaster.di
 CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj: CMakeFiles/Raycaster.dir/includes_C.rsp
 CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj: D:/Projects/Doom/thirdparty/glad/src/glad.c
 CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj"
 	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj -MF CMakeFiles\Raycaster.dir\thirdparty\glad\src\glad.c.obj.d -o CMakeFiles\Raycaster.dir\thirdparty\glad\src\glad.c.obj -c D:\Projects\Doom\thirdparty\glad\src\glad.c
 
 CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.i: cmake_force
@@ -161,7 +146,6 @@ CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.s: cmake_force
 # Object files for target Raycaster
 Raycaster_OBJECTS = \
 "CMakeFiles/Raycaster.dir/src/Map.cpp.obj" \
-"CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj" \
 "CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj" \
 "CMakeFiles/Raycaster.dir/src/Window.cpp.obj" \
 "CMakeFiles/Raycaster.dir/src/main.cpp.obj" \
@@ -171,7 +155,6 @@ Raycaster_OBJECTS = \
 Raycaster_EXTERNAL_OBJECTS =
 
 Raycaster.exe: CMakeFiles/Raycaster.dir/src/Map.cpp.obj
-Raycaster.exe: CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj
 Raycaster.exe: CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj
 Raycaster.exe: CMakeFiles/Raycaster.dir/src/Window.cpp.obj
 Raycaster.exe: CMakeFiles/Raycaster.dir/src/main.cpp.obj
@@ -182,7 +165,7 @@ Raycaster.exe: thirdparty/glm/glm/libglm.a
 Raycaster.exe: CMakeFiles/Raycaster.dir/linkLibs.rsp
 Raycaster.exe: CMakeFiles/Raycaster.dir/objects1.rsp
 Raycaster.exe: CMakeFiles/Raycaster.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Raycaster.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Projects\Doom\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Raycaster.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Raycaster.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,39 +1,33 @@
 [
 {
   "directory": "D:/Projects/Doom/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Raycaster.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\Raycaster.dir\\src\\Map.cpp.obj -c D:\\Projects\\Doom\\src\\Map.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/VERSION.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\VERSION.dir\\src\\Map.cpp.obj -c D:\\Projects\\Doom\\src\\Map.cpp",
   "file": "D:/Projects/Doom/src/Map.cpp",
-  "output": "CMakeFiles/Raycaster.dir/src/Map.cpp.obj"
+  "output": "CMakeFiles/VERSION.dir/src/Map.cpp.obj"
 },
 {
   "directory": "D:/Projects/Doom/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Raycaster.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\Raycaster.dir\\src\\WADLoader.cpp.obj -c D:\\Projects\\Doom\\src\\WADLoader.cpp",
-  "file": "D:/Projects/Doom/src/WADLoader.cpp",
-  "output": "CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj"
-},
-{
-  "directory": "D:/Projects/Doom/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Raycaster.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\Raycaster.dir\\src\\WADReader.cpp.obj -c D:\\Projects\\Doom\\src\\WADReader.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/VERSION.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\VERSION.dir\\src\\WADReader.cpp.obj -c D:\\Projects\\Doom\\src\\WADReader.cpp",
   "file": "D:/Projects/Doom/src/WADReader.cpp",
-  "output": "CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj"
+  "output": "CMakeFiles/VERSION.dir/src/WADReader.cpp.obj"
 },
 {
   "directory": "D:/Projects/Doom/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Raycaster.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\Raycaster.dir\\src\\Window.cpp.obj -c D:\\Projects\\Doom\\src\\Window.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/VERSION.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\VERSION.dir\\src\\Window.cpp.obj -c D:\\Projects\\Doom\\src\\Window.cpp",
   "file": "D:/Projects/Doom/src/Window.cpp",
-  "output": "CMakeFiles/Raycaster.dir/src/Window.cpp.obj"
+  "output": "CMakeFiles/VERSION.dir/src/Window.cpp.obj"
 },
 {
   "directory": "D:/Projects/Doom/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Raycaster.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\Raycaster.dir\\src\\main.cpp.obj -c D:\\Projects\\Doom\\src\\main.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/VERSION.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\VERSION.dir\\src\\main.cpp.obj -c D:\\Projects\\Doom\\src\\main.cpp",
   "file": "D:/Projects/Doom/src/main.cpp",
-  "output": "CMakeFiles/Raycaster.dir/src/main.cpp.obj"
+  "output": "CMakeFiles/VERSION.dir/src/main.cpp.obj"
 },
 {
   "directory": "D:/Projects/Doom/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Raycaster.dir/includes_C.rsp -g -o CMakeFiles\\Raycaster.dir\\thirdparty\\glad\\src\\glad.c.obj -c D:\\Projects\\Doom\\thirdparty\\glad\\src\\glad.c",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/VERSION.dir/includes_C.rsp -g -o CMakeFiles\\VERSION.dir\\thirdparty\\glad\\src\\glad.c.obj -c D:\\Projects\\Doom\\thirdparty\\glad\\src\\glad.c",
   "file": "D:/Projects/Doom/thirdparty/glad/src/glad.c",
-  "output": "CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj"
+  "output": "CMakeFiles/VERSION.dir/thirdparty/glad/src/glad.c.obj"
 },
 {
   "directory": "D:/Projects/Doom/build/thirdparty/glfw-3.4/src",

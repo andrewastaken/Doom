@@ -141,7 +141,7 @@ CMakeFiles/Raycaster.dir/src/main.cpp.obj: D:\Projects\Doom\src\main.cpp \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/istream \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/istream.tcc \
- D:\Projects\Doom\src\WADLoader.h D:\Projects\Doom\src\WADFile.h \
+ D:\Projects\Doom\src\WADReader.h D:\Projects\Doom\src\WADFile.h \
  C:/msys64/ucrt64/include/c++/13.2.0/cstdint \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h \
@@ -150,6 +150,9 @@ CMakeFiles/Raycaster.dir/src/main.cpp.obj: D:\Projects\Doom\src\main.cpp \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/fstream.tcc \
+ C:/msys64/ucrt64/include/c++/13.2.0/cstring \
+ C:/msys64/ucrt64/include/string.h \
+ C:/msys64/ucrt64/include/sec_api/string_s.h \
  C:/msys64/ucrt64/include/c++/13.2.0/vector \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_uninitialized.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_vector.h \

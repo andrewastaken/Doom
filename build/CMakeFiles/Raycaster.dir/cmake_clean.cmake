@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Raycaster.dir/src/Map.cpp.obj"
   "CMakeFiles/Raycaster.dir/src/Map.cpp.obj.d"
-  "CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj"
-  "CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj.d"
   "CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj"
   "CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj.d"
   "CMakeFiles/Raycaster.dir/src/Window.cpp.obj"

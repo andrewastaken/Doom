@@ -1,9 +1,13 @@
 #include <iostream>
-#include "WADLoader.h"
+#include "WADReader.h"
 
 int main() {
-    WADLoader loader("D://Projects//Doom//assets//wad//DOOM.WAD");
-    loader.loadWADFile();
-    loader.readDirectories();
+    WADReader reader;
+    reader.setWADFilePath("../assets/wad/DOOM.WAD");
+    reader.loadWADFile();
+
+    reader.readHeader();
+    //reader.readDirectories();
+
     return 0;
 }

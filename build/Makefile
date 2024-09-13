@@ -161,17 +161,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Raycaster
+# Target rules for targets named VERSION
 
 # Build rule for target.
-Raycaster: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Raycaster
-.PHONY : Raycaster
+VERSION: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 VERSION
+.PHONY : VERSION
 
 # fast build rule for target.
-Raycaster/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/build
-.PHONY : Raycaster/fast
+VERSION/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/build
+.PHONY : VERSION/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -230,7 +230,7 @@ src/Map.obj: src/Map.cpp.obj
 
 # target to build an object file
 src/Map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/Map.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/Map.cpp.obj
 .PHONY : src/Map.cpp.obj
 
 src/Map.i: src/Map.cpp.i
@@ -238,7 +238,7 @@ src/Map.i: src/Map.cpp.i
 
 # target to preprocess a source file
 src/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/Map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/Map.cpp.i
 .PHONY : src/Map.cpp.i
 
 src/Map.s: src/Map.cpp.s
@@ -246,39 +246,15 @@ src/Map.s: src/Map.cpp.s
 
 # target to generate assembly for a file
 src/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/Map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/Map.cpp.s
 .PHONY : src/Map.cpp.s
-
-src/WADLoader.obj: src/WADLoader.cpp.obj
-.PHONY : src/WADLoader.obj
-
-# target to build an object file
-src/WADLoader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADLoader.cpp.obj
-.PHONY : src/WADLoader.cpp.obj
-
-src/WADLoader.i: src/WADLoader.cpp.i
-.PHONY : src/WADLoader.i
-
-# target to preprocess a source file
-src/WADLoader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADLoader.cpp.i
-.PHONY : src/WADLoader.cpp.i
-
-src/WADLoader.s: src/WADLoader.cpp.s
-.PHONY : src/WADLoader.s
-
-# target to generate assembly for a file
-src/WADLoader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADLoader.cpp.s
-.PHONY : src/WADLoader.cpp.s
 
 src/WADReader.obj: src/WADReader.cpp.obj
 .PHONY : src/WADReader.obj
 
 # target to build an object file
 src/WADReader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADReader.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/WADReader.cpp.obj
 .PHONY : src/WADReader.cpp.obj
 
 src/WADReader.i: src/WADReader.cpp.i
@@ -286,7 +262,7 @@ src/WADReader.i: src/WADReader.cpp.i
 
 # target to preprocess a source file
 src/WADReader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/WADReader.cpp.i
 .PHONY : src/WADReader.cpp.i
 
 src/WADReader.s: src/WADReader.cpp.s
@@ -294,7 +270,7 @@ src/WADReader.s: src/WADReader.cpp.s
 
 # target to generate assembly for a file
 src/WADReader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/WADReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/WADReader.cpp.s
 .PHONY : src/WADReader.cpp.s
 
 src/Window.obj: src/Window.cpp.obj
@@ -302,7 +278,7 @@ src/Window.obj: src/Window.cpp.obj
 
 # target to build an object file
 src/Window.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/Window.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/Window.cpp.obj
 .PHONY : src/Window.cpp.obj
 
 src/Window.i: src/Window.cpp.i
@@ -310,7 +286,7 @@ src/Window.i: src/Window.cpp.i
 
 # target to preprocess a source file
 src/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/Window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/Window.cpp.i
 .PHONY : src/Window.cpp.i
 
 src/Window.s: src/Window.cpp.s
@@ -318,7 +294,7 @@ src/Window.s: src/Window.cpp.s
 
 # target to generate assembly for a file
 src/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/Window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/Window.cpp.s
 .PHONY : src/Window.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -326,7 +302,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -334,7 +310,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -342,7 +318,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 thirdparty/glad/src/glad.obj: thirdparty/glad/src/glad.c.obj
@@ -350,7 +326,7 @@ thirdparty/glad/src/glad.obj: thirdparty/glad/src/glad.c.obj
 
 # target to build an object file
 thirdparty/glad/src/glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/thirdparty/glad/src/glad.c.obj
 .PHONY : thirdparty/glad/src/glad.c.obj
 
 thirdparty/glad/src/glad.i: thirdparty/glad/src/glad.c.i
@@ -358,7 +334,7 @@ thirdparty/glad/src/glad.i: thirdparty/glad/src/glad.c.i
 
 # target to preprocess a source file
 thirdparty/glad/src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/thirdparty/glad/src/glad.c.i
 .PHONY : thirdparty/glad/src/glad.c.i
 
 thirdparty/glad/src/glad.s: thirdparty/glad/src/glad.c.s
@@ -366,7 +342,7 @@ thirdparty/glad/src/glad.s: thirdparty/glad/src/glad.c.s
 
 # target to generate assembly for a file
 thirdparty/glad/src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Raycaster.dir\build.make CMakeFiles/Raycaster.dir/thirdparty/glad/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VERSION.dir\build.make CMakeFiles/VERSION.dir/thirdparty/glad/src/glad.c.s
 .PHONY : thirdparty/glad/src/glad.c.s
 
 # Help Target
@@ -383,15 +359,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... uninstall
 	@echo ... update_mappings
-	@echo ... Raycaster
+	@echo ... VERSION
 	@echo ... glfw
 	@echo ... glm
 	@echo ... src/Map.obj
 	@echo ... src/Map.i
 	@echo ... src/Map.s
-	@echo ... src/WADLoader.obj
-	@echo ... src/WADLoader.i
-	@echo ... src/WADLoader.s
 	@echo ... src/WADReader.obj
 	@echo ... src/WADReader.i
 	@echo ... src/WADReader.s
