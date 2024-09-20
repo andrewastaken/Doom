@@ -15,7 +15,7 @@ add_subdirectory(thirdparty/glm)
 file(GLOB_RECURSE SRC_FILES src/*.cpp)
 file(GLOB_RECURSE HEADER_FILES src/*.h)
 
-add_executable(${CMAKE_PROJECT_NAME} ${SRC_FILES} ${HEADER_FILES} thirdparty/glad/src/glad.c)
+add_executable(Doom ${SRC_FILES} ${HEADER_FILES} thirdparty/glad/src/glad.c)
 
-target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${OPENGL_INCLUDE_DIRS} thirdparty/glad/include/)
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ${OPENGL_LIBRARIES} glfw glm::glm)
+target_include_directories(Doom PRIVATE ${OPENGL_INCLUDE_DIRS} thirdparty/glad/include/)
+target_link_libraries(Doom PRIVATE ${OPENGL_LIBRARIES} glfw glm::glm)

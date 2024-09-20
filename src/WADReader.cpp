@@ -2,24 +2,16 @@
 #include <iostream>
 #include <cstring>
 
-WADReader::WADReader() {
-    m_WADFileData = nullptr;
-}
-
-WADReader::~WADReader() {
-    delete[] m_WADFileData;
-    m_WADFileData = nullptr;
-}
-
-void WADReader::setWADFilePath(std::string WADFilePath) {
+WADReader::WADReader(std::string WADFilePath) {
     m_WADFilePath = WADFilePath;
+
+    loadWADFile();
+
+    readHeader();
+    readDirectories();
 }
 
-bool WADReader::loadWADFile() {
-    if(m_WADFilePath == "") {
-        throw std::runtime_error("WAD file path not yet specified.");
-    }
-
+void WADReader::loadWADFile() {
     m_WADFileStream.open(m_WADFilePath, std::ifstream::binary);
 
     if(!m_WADFileStream.is_open()) {
@@ -27,54 +19,63 @@ bool WADReader::loadWADFile() {
     }
 
     m_WADFileStream.seekg(0, m_WADFileStream.end);
-    m_WADFileLength = m_WADFileStream.tellg();
-    std::cout << m_WADFileLength << '\n';
+    size_t fileLength = m_WADFileStream.tellg();
     m_WADFileStream.seekg(0, m_WADFileStream.beg);
 
-    m_WADFileData = new uint8_t[m_WADFileLength];
+    m_WADFileBuffer.resize(fileLength);
 
-    m_WADFileStream.read((char*) m_WADFileData, m_WADFileLength);
+    m_WADFileStream.read(reinterpret_cast<char*>(m_WADFileBuffer.data()), fileLength);
+
     m_WADFileStream.close();
 
-    std::cout << "WAD file loading complete." << std::endl;
-    return true;
+    std::cout << "WAD file loading complete. " << m_WADFileBuffer.size() << " bytes read.\n";
 }
 
 void WADReader::readHeader() {
-    m_WADHeader.WADType = &readBytes<char>(0, 4)[0];
+    auto WADNameVector = readBytes<char>(0, 4); 
+    m_WADHeader.WADType = std::string(WADNameVector.data(), WADNameVector.size());
+
     m_WADHeader.lumpCount = readBytes<uint32_t>(4, 4)[0];
     m_WADHeader.initOffset = readBytes<uint32_t>(8, 4)[0];
 
-    std::cout << "WAD type: " << m_WADHeader.WADType 
-              << ", Lump count: " << m_WADHeader.lumpCount
-              << ", Initial offset: " << m_WADHeader.initOffset
-              << std::endl;
+    // std::cout << "WAD type: " << m_WADHeader.WADType << ", "
+    //           << "Lump count: " << m_WADHeader.lumpCount << ", "
+    //           << "Initial offset: " << m_WADHeader.initOffset << " bytes.\n";
+
+    std::cout << "Header info read.\n";
+              
 }
 
 void WADReader::readDirectories() {
+    m_WADDirectories.reserve(m_WADHeader.lumpCount);
+
     for(int i = 0; i < m_WADHeader.lumpCount; i++) {
         size_t offset = m_WADHeader.initOffset + i * 16;
 
         Directory directory;
-        directory.lumpOffset = readBytes<uint32_t>(offset + 0, 4)[0];
+        directory.lumpOffset = readBytes<uint32_t>(offset, 4)[0];
         directory.lumpSize = readBytes<uint32_t>(offset + 4, 4)[0];
-        directory.lumpName = &readBytes<char>(offset + 8, 8)[0];
+
+        auto lumpNameVector = readBytes<char>(offset + 8, 8);
+        size_t lumpNameLength = strnlen(lumpNameVector.data(), lumpNameVector.size());
+        directory.lumpName = std::string(lumpNameVector.data(), lumpNameLength);
 
         m_WADDirectories.push_back(directory);
 
-        std::cout << "Lump offset: " << directory.lumpOffset 
-                  << ", Lump size: " << directory.lumpSize
-                  << ", Lump name: " << directory.lumpName 
-                  << std::endl;
-    }
+        // std::cout << "Offset: " << offset << " bytes, "
+        //           << "Distance from end of buffer: " << (m_WADFileBuffer.size() - offset) << " bytes, ";
 
+        // std::cout << "Lump offset: " << directory.lumpOffset << " bytes, " 
+        //           << "Lump size: " << directory.lumpSize << " bytes, "
+        //           << "Lump name: " << directory.lumpName << "\n";
+    }
     
+    std::cout << "Directory info read.\n";
 }
 
 /**
- * This function reformats raw binary data into the specified type. The type parameter should be a C primitive type. 
+ * This function reformats the raw binary data from the WAD file into the specified type. The type parameter should be a C primitive type. 
  * 
- * @param WADFileData A pointer to the binary data that is being read from
  * @param initOffset The number of bytes to skip before reading
  * @param numBytes The number of bytes to read
  * 
@@ -90,20 +91,20 @@ std::vector<T> WADReader::readBytes(size_t initOffset, unsigned int numBytes) {
         throw std::invalid_argument("Size of specified type is not evenly divisible by specified number of bytes.");
     }
 
-    if(numBytes * sizeof(T) + initOffset > m_WADFileLength) {
+    if(numBytes + initOffset > m_WADFileBuffer.size()) {
         throw std::out_of_range("The specified parameters would result in reading out of bounds.");
     }
 
     std::vector<T> data;
+    data.reserve(numBytes / sizeof(T));
 
-    size_t offset = 0;
+    for(int i = 0; i < numBytes; i++) {
+        size_t offset = initOffset + i * sizeof(T);
 
-    while(sizeof(T) + offset <= numBytes) {
         T value;
-        std::memcpy(&value, m_WADFileData + initOffset + offset, sizeof(T));
+        std::memcpy(&value, m_WADFileBuffer.data() + offset, sizeof(T));
         data.push_back(value);
-        offset += sizeof(T);
     }
-
+    
     return data;
 }

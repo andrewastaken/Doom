@@ -1,13 +1,10 @@
-#include <iostream>
 #include "WADReader.h"
+#include <iostream>
 
 int main() {
-    WADReader reader;
-    reader.setWADFilePath("../assets/wad/DOOM.WAD");
-    reader.loadWADFile();
+    std::string WADFilePath = "../wad/DOOM.WAD";
 
-    reader.readHeader();
-    //reader.readDirectories();
+    WADReader reader(WADFilePath);
 
     return 0;
 }
